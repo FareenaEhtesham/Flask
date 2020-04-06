@@ -1,0 +1,23 @@
+
+{% extends 'bootstrap/base.html' %}
+
+
+{% block body %}
+
+<table border = 1>
+  <tr>
+    <th>Name:</th>
+    <th>Email:</th>
+    <th>Password:</th>
+  </tr>
+    {% for i in display %}
+    <tr>
+      <td> {{i.user_name}} </td>
+      <td> {{i.email}} </td>
+      <td> {{i.password}} </td>
+
+    </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}  
